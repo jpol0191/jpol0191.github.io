@@ -1,0 +1,89 @@
+// Colors
+$main-color: #E7E2DF;
+$acent-color: #656263;
+$active-color: #F03642;
+
+// Fonts
+$fira-font: 'Fira Sans', sans-serif;
+
+body{
+	margin: 0;
+}
+
+img{
+	width: 100%;
+}
+
+#banner{
+	height: 40px;
+	background: $main-color;
+	padding: 10px;
+
+	#logo {
+		width: 40px;
+		margin: 0px 10px;
+		float: left;
+	};
+
+	#link-box{
+		float: right;
+
+		.media-link{
+			width: 32px;
+			float: right;
+			margin: 0px 5px;
+		};
+	};
+}
+
+#content{
+	background: url(/images/technology_60.jpg) center center / cover no-repeat;
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	bottom: 0; 
+	text-align: center;
+	#tabs{
+		list-style-type: none;
+		display: inline-block;
+		margin: 10 auto;
+		li{
+			font-family: $fira-font;
+			display: inline;
+			color: $main-color;
+			margin: 0px 20px;
+
+			a{
+				text-decoration: none;
+				color: $main-color;
+				font-family: $fira-font;
+				font-size: 30px;
+				&.selected{
+					color: $active-color;
+				}
+			};
+		};
+	};
+
+	#home{
+		
+	}
+	div.tabContent{
+    animation: fadein 1s;
+    position: absolute;
+		width: 100%;
+		top: 60px;
+		bottom: 0;
+	}
+
+	div.tabContent.hide{
+		display: none;
+	}
+
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
