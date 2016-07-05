@@ -6,12 +6,17 @@ img {
   width: 100%;
   display: block; }
 
+.fa {
+  color: #656263; }
+  .fa:hover {
+    color: #F03642; }
+
 #banner {
-  height: 40px;
+  height: 30px;
   background: #E7E2DF;
   padding: 10px; }
   #banner #logo {
-    width: 40px;
+    width: 30px;
     margin: 0px 10px;
     float: left; }
   #banner #link-box {
@@ -25,13 +30,13 @@ img {
   background: url(/images/technology_60.jpg) center center/cover no-repeat;
   position: absolute;
   width: 100%;
-  top: 60px;
+  top: 50px;
   bottom: 0;
   text-align: center; }
   #content #tabs {
     list-style-type: none;
     display: inline-block;
-    margin: 10 auto; }
+    margin: 10px auto; }
     #content #tabs li {
       font-family: "Fira Sans", sans-serif;
       display: inline;
@@ -76,7 +81,7 @@ img {
     width: 600px;
     margin: 0 auto;
     position: absolute;
-    top: 60px;
+    top: 0px;
     bottom: 0;
     left: 50%;
     margin-left: -300px; }
