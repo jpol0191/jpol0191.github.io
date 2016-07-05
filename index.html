@@ -144,12 +144,13 @@
 
 			<!-- The contect tab content -->
 			<div id="contact" class="tabContent">
-				<form action="https://formspree.io/jpol0191@gmail.com" method="POST">
-					<p>Name</p> <input type="text" name="name">
-					<p>Email</p> <input type="email" name="_replyto">
-					<p>Messages</p> <textarea name="body" rows="6" cols="25"></textarea><br>
-					<input type="submit" value="Send">
-					<input type="reset" value="Clear">
+				<form id="mail-form" action="https://formspree.io/jpol0191@gmail.com" method="POST">
+					<h2>Talk to me.</h2>
+					<input type="text" name="name" placeholder="Name">
+					<input type="email" name="_replyto" placeholder="Email">
+					<textarea name="body" rows="8" cols="35" placeholder="Message"></textarea><br>
+					<input class="button" type="submit" value="Send">
+					<input class="button" type="reset" value="Clear">
 				</form>
 			</div>	
 			<!-- End of the contact tab content	 -->

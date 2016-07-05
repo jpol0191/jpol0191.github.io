@@ -121,6 +121,27 @@ img {
           text-align: left;
           color: #E7E2DF;
           display: block; }
+  #content #contact h2 {
+    color: #F03642;
+    font-size: 60px;
+    margin-bottom: 0; }
+  #content #contact #mail-form {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-align: left; }
+    #content #contact #mail-form input, #content #contact #mail-form textarea {
+      background: #E7E2DF;
+      color: #656263;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      display: block;
+      margin: 5px; }
+    #content #contact #mail-form .button {
+      display: inline-block;
+      width: 100px;
+      color: #F03642; }
   #content div.tabContent {
     animation: fadein 1s;
     position: absolute;
