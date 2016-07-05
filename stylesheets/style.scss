@@ -8,10 +8,12 @@ $fira-font: 'Fira Sans', sans-serif;
 
 body{
 	margin: 0;
+	overflow: hidden;
 }
 
 img{
 	width: 100%;
+	display: block;
 }
 
 #banner{
@@ -66,14 +68,104 @@ img{
 	};
 
 	#home{
-		
+		#about-me{
+			width: 600px;
+			text-align: left;
+			margin: 0 auto;
+			position: relative;
+			top: 100px;
+			font-family: $fira-font;
+			#hello-txt{
+				font-family: $fira-font;
+				color: $active-color;
+				font-size: 60px;
+				margin-bottom: 0;
+			};
+			#about-me-text{
+				margin-top: 0;
+				color: $main-color;
+				font-size: 15px;
+			};
+			#resume-btn{
+				text-align: center;
+				padding: auto;
+				display: inline-block;
+				text-decoration: none;
+				font-size: 30px;
+				color: $main-color;
+				line-height: 45px;
+				border-bottom: solid $main-color 1px;
+				&:hover{
+					border-bottom: solid $active-color 2px;
+				}
+			};
+		};
 	}
+
+	#projects{
+		#my-project-wrapper{
+			overflow: hidden;
+			width: 600px;
+			margin: 0 auto;
+			position: absolute;
+			top: 60px;
+			bottom: 0;
+			left: 50%;
+			margin-left: -300px;
+			#my-projects{
+				overflow-y: scroll;
+				width: 600px;
+				margin: 0 auto;
+				position: absolute;
+				top: 60px;
+				bottom: 0;
+				left: 50%;
+				margin-left: -300px;
+				.project{
+					margin: 30px 0; 
+					.project-image{
+						width: 150px;
+						float: left;
+						margin-right: 20px;
+						border: $main-color solid 2px;
+						border-radius: 1px;
+						&:hover{
+							border: $active-color solid 2px;
+						}
+					};
+					h2{
+						color: $active-color;
+						text-align: left;
+					};
+					.skill-box{
+						float: left;
+						width: 100%;
+						.skill{
+							display: inline-block;
+							background: $active-color;
+							color: $main-color;
+							padding: 0 5px;
+							border-radius: 10px;
+							margin: 5px 0 ;
+						}
+					};
+					p{
+						text-align: left;
+						color: $main-color;
+						display: block;
+					}
+				};
+			};
+		};
+	}
+
 	div.tabContent{
     animation: fadein 1s;
     position: absolute;
 		width: 100%;
 		top: 60px;
 		bottom: 0;
+		font-family: $fira-font;
 	}
 
 	div.tabContent.hide{

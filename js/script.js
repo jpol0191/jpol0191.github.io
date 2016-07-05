@@ -37,7 +37,7 @@ function initializeTabs(){
 		      contentDivs[id].className = 'tabContent hide';
 		    }
 		  }
-
+		  hideScrollBar(document.getElementById('my-projects'))
 		  // Stop the browser following the link
 		  return false;
 		}; 
@@ -69,5 +69,7 @@ function getHash( url ) {
 }
 // =========== end of tabs code ==============
 
-
-
+function hideScrollBar(element){
+	element.style.paddingRight = element.offsetWidth - element.clientWidth + 'px';
+	console.log(element);
+}

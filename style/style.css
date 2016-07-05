@@ -1,8 +1,10 @@
 body {
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 img {
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 #banner {
   height: 40px;
@@ -42,12 +44,85 @@ img {
         font-size: 30px; }
         #content #tabs li a.selected {
           color: #F03642; }
+  #content #home #about-me {
+    width: 600px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    font-family: "Fira Sans", sans-serif; }
+    #content #home #about-me #hello-txt {
+      font-family: "Fira Sans", sans-serif;
+      color: #F03642;
+      font-size: 60px;
+      margin-bottom: 0; }
+    #content #home #about-me #about-me-text {
+      margin-top: 0;
+      color: #E7E2DF;
+      font-size: 15px; }
+    #content #home #about-me #resume-btn {
+      text-align: center;
+      padding: auto;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 30px;
+      color: #E7E2DF;
+      line-height: 45px;
+      border-bottom: solid #E7E2DF 1px; }
+      #content #home #about-me #resume-btn:hover {
+        border-bottom: solid #F03642 2px; }
+  #content #projects #my-project-wrapper {
+    overflow: hidden;
+    width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -300px; }
+    #content #projects #my-project-wrapper #my-projects {
+      overflow-y: scroll;
+      width: 600px;
+      margin: 0 auto;
+      position: absolute;
+      top: 60px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -300px; }
+      #content #projects #my-project-wrapper #my-projects .project {
+        margin: 30px 0; }
+        #content #projects #my-project-wrapper #my-projects .project .project-image {
+          width: 150px;
+          float: left;
+          margin-right: 20px;
+          border: #E7E2DF solid 2px;
+          border-radius: 1px; }
+          #content #projects #my-project-wrapper #my-projects .project .project-image:hover {
+            border: #F03642 solid 2px; }
+        #content #projects #my-project-wrapper #my-projects .project h2 {
+          color: #F03642;
+          text-align: left; }
+        #content #projects #my-project-wrapper #my-projects .project .skill-box {
+          float: left;
+          width: 100%; }
+          #content #projects #my-project-wrapper #my-projects .project .skill-box .skill {
+            display: inline-block;
+            background: #F03642;
+            color: #E7E2DF;
+            padding: 0 5px;
+            border-radius: 10px;
+            margin: 5px 0; }
+        #content #projects #my-project-wrapper #my-projects .project p {
+          text-align: left;
+          color: #E7E2DF;
+          display: block; }
   #content div.tabContent {
     animation: fadein 1s;
     position: absolute;
     width: 100%;
     top: 60px;
-    bottom: 0; }
+    bottom: 0;
+    font-family: "Fira Sans", sans-serif; }
   #content div.tabContent.hide {
     display: none; }
 

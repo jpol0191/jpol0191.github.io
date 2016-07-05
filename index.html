@@ -40,7 +40,7 @@
 					<a href="#home">Home</a>
 				</li>
 				<li>
-					<a href="#projects">Projects</a>
+					<a href="#projects" onclick="hideScrollBar(document.getElementById('my-projects'))">Projects</a>
 				</li>
 				<li>
 					<a href="#contact">Contact</a>
@@ -49,19 +49,93 @@
 
 			<!-- The home tab content -->
 			<div id="home" class="tabContent">
-				this is the home tab
-				<a href="/images/resume.pdf" target="_blank">Download</a>
+				<div id="about-me">
+					<p id="hello-txt">Hello! I'm Juan.</p>
+					<p id="about-me-text">I am a web developer from Chatham, New Jersey. I recently graduated from a 12-week web development intensive course at The New York Code + Design Academy. I was one of those kids that would see a magic trick and watched it over and over again until I learned how to do it myself. Fortunately for me, I never grew out of that habit and use it every time I approach a new problem. </p>
+
+					<a id="resume-btn" href="/images/resume.pdf" target="_blank">Resume</a>
+				</div>
 			</div>
+			<!-- End of the home tab content -->
 
 			<!-- The projects tab content -->
 			<div id="projects" class="tabContent">
-				this is the projects tab
+				<!-- Start of my-projects -->
+				<div id="my-project-wrapper">
+					<div id="my-projects">
+						<div class="project">
+							<div class="project-image">
+								<img src="/images/technology_60.jpg">
+							</div>
+							<h2>Event Rumble</h2>
+							<p>Event Rumble makes it easy for any group of friends to find multiple events they might be interested then vote for the event that appeals to the majority.</p>
+							<div class="skill-box">
+								<div class="skill"> Web Sockets </div>
+								<div class="skill"> Ruby on Rails </div>
+								<div class="skill"> Omniauth-Facebook </div>
+								<div class="skill"> PostgreSQL </div>
+								<div class="skill"> jQuery </div>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+
+						<div class="project">
+							<div class="project-image">
+								<img src="/images/technology_60.jpg">
+							</div>
+							<h2>Mega Man Evolution</h2>
+							<p>A classic game that has been reinvented, incorporating other classic retro games that's fun for all ages.</p>
+							<div class="skill-box">
+								<div class="skill">C#</div>
+								<div class="skill">Unity Game Engine</div>
+								<div class="skill">HTML5</div>
+								<div class="skill">JavaScript</div>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+						
+						<div class="project">
+							<div class="project-image">
+								<img src="/images/technology_60.jpg">
+							</div>
+							<h2>Nintendo Jukebox</h2>
+							<p>A Nintendo themed music player that makes use of JavaScript objects.</p>
+							<div class="skill-box">
+								<div class="skill">JavaScript</div>
+								<div class="skill">jQuery</div>
+								<div class="skill">HTML5</div>
+								<div class="skill">CSS3</div>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+						
+						<div class="project">
+							<div class="project-image">
+								<img src="/images/technology_60.jpg">
+							</div>
+							<h2>Bumblr</h2>
+							<p>Bumblr is a micro blog inspired by Tumblr where users can write and share what is on their mind.</p>
+							<div class="skill-box">
+								<div class="skill">Ruby on Rails</div>
+								<div class="skill">jQuery</div>
+								<div class="skill">JavaScript</div>
+								<div class="skill">HTML5</div>
+								<div class="skill">Sass</div>
+								<div class="skill">SQLite3</div>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+					</div>
+				</div>
+				<!-- End of my-projects -->
 			</div>
+			<!-- End of the projects tab content -->
 
 			<!-- The contect tab content -->
 			<div id="contact" class="tabContent">
 				this is the contact tab
-			</div>			
+			</div>	
+			<!-- End of the contact tab content	 -->
 		</div>
 		<!-- End of the Content -->
 
