@@ -93,10 +93,13 @@ img{
 				color: $main-color;
 				font-size: 15px;
 			};
+			#home-btns{
+				text-align: center;
+			}
 			#resume-btn{
 				text-align: center;
-				padding: auto;
 				display: inline-block;
+				margin: 0 auto; 
 				text-decoration: none;
 				font-size: 30px;
 				color: $main-color;
@@ -184,7 +187,7 @@ img{
 			width: 350px;
 			// height: 300px;
 			margin: 0 auto;
-			text-align: left;
+			text-align: center;
 			input, textarea{
 				background: $main-color;
 				color: $acent-color;

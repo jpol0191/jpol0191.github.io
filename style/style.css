@@ -65,10 +65,12 @@ img {
       margin-top: 0;
       color: #E7E2DF;
       font-size: 15px; }
+    #content #home #about-me #home-btns {
+      text-align: center; }
     #content #home #about-me #resume-btn {
       text-align: center;
-      padding: auto;
       display: inline-block;
+      margin: 0 auto;
       text-decoration: none;
       font-size: 30px;
       color: #E7E2DF;
@@ -134,7 +136,7 @@ img {
     display: block;
     width: 350px;
     margin: 0 auto;
-    text-align: left; }
+    text-align: center; }
     #content #contact #mail-form input, #content #contact #mail-form textarea {
       background: #E7E2DF;
       color: #656263;
