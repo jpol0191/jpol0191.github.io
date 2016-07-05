@@ -125,10 +125,15 @@ img {
     color: #F03642;
     font-size: 60px;
     margin-bottom: 0; }
+  #content #contact i {
+    color: #E7E2DF;
+    margin: 20px 10px; }
+    #content #contact i:hover {
+      color: #F03642; }
   #content #contact #mail-form {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
+    display: block;
+    width: 350px;
+    margin: 0 auto;
     text-align: left; }
     #content #contact #mail-form input, #content #contact #mail-form textarea {
       background: #E7E2DF;
@@ -137,7 +142,8 @@ img {
       border-radius: 5px;
       padding: 5px;
       display: block;
-      margin: 5px; }
+      margin: 5px;
+      width: 100%; }
     #content #contact #mail-form .button {
       display: inline-block;
       width: 100px;
